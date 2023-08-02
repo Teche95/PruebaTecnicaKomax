@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/globals.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,13 +12,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Komax</title>
 </head>
 
 <body>
     <header class="header-primario">
-
-      
         <div class="contenido-primario-header">
             <div class="barra-superior">
                 <div class="barra-superior__instagram-clientes">
@@ -47,7 +44,7 @@
             <div class="menu">
                 <div class="menu__navegacion">
                     <img src="./imagenes/stoked simplificado1 1.svg" alt="logo stoked">
-    
+
                     <div class="menu__icons">
                         <a href="#">
                             <img src="./imagenes/usuario.svg" alt="usuario">
@@ -59,28 +56,35 @@
                             <img src="./imagenes/menu.svg" alt="menu">
                         </a>
                     </div>
-    
+
                     <!-- Siempre oculto hasta desktop o hasta la interacción -->
                     <nav class="menu__desktop">
-                       <ul class="menu__desktop-lista">
-                           <li class="menu__desktop-item">
-                                <a href="#trajesdeagua ">Trajes de agua</a></li>
-                           <li class="menu__desktop-item">
-                                <a href="#hombre">Hombre</a></li>
-                           <li class="menu__desktop-item">
-                                <a href="#mujer">Mujer</a></li>
-                           <li class="menu__desktop-item">
-                                <a href="#niños">Niños</a></li>
-                           <li class="menu__desktop-item">
-                                <a href="#accesorios">Accesorios</a></li>
-                           <li class="menu__desktop-item">
-                                <a href="#equipamiento">Equipamiento</a></li>
-                           <li class="menu__desktop-item">
-                                <a href="#sale">Sale</a></li>
-                       </ul>
-                   </nav>
+                        <ul class="menu__desktop-lista">
+                            <li class="menu__desktop-item">
+                                <a href="#trajesdeagua ">Trajes de agua</a>
+                            </li>
+                            <li class="menu__desktop-item">
+                                <a href="#hombre">Hombre</a>
+                            </li>
+                            <li class="menu__desktop-item">
+                                <a href="#mujer">Mujer</a>
+                            </li>
+                            <li class="menu__desktop-item">
+                                <a href="#niños">Niños</a>
+                            </li>
+                            <li class="menu__desktop-item">
+                                <a href="#accesorios">Accesorios</a>
+                            </li>
+                            <li class="menu__desktop-item">
+                                <a href="#equipamiento">Equipamiento</a>
+                            </li>
+                            <li class="menu__desktop-item">
+                                <a href="#sale">Sale</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-    
+
                 <!-- Search -->
                 <div class="menu__busqueda">
                     <input type="search" placeholder="buscar" class="menu__barra-de-busqueda" />
@@ -89,7 +93,6 @@
             </div>
 
         </div>
-
         <p class="alerta-marketing">ENVÍO GRATIS POR COMPRAS SOBRE $50.000</p>
     </header>
 
@@ -117,14 +120,7 @@
         <!-- Seccion productos -->
         <section class="slider-flecha">
             <h3>LO QUE LA GENTE ESTÁ LLEVANDO</h3>
-
-            <div class="slider-flecha__derecha">
-                <img src="./imagenes/flechaizquierda.svg" alt="flechaderecha">
-            </div>
-            <div class="slider-flecha__izquierda">
-                <img src="./imagenes/flechaderecha.svg" alt="flechaizquierda">
-            </div>
-            <div class="slider-flecha__container">
+            <div id="Slider" class="slider slider-flecha__container">
                 <article class="slider-flecha__producto">
                     <img src="./imagenes/mujer.jpg" alt="" class="slider-flecha__image-producto">
                     <h4 class="slider-flecha__titulo-producto">POLERA GOOFY MUJER RECICLADA</h4>
@@ -132,58 +128,115 @@
                         <span>$19.990</span>
                     </section>
                 </article>
+
                 <article class="slider-flecha__producto">
                     <img src="/imagenes/hombrecamisa.jpg" alt="" class="slider-flecha__image-producto">
-                    <h4 class="slider-flecha__titulo-producto">TRAJE DE BAÑO BOARDSHORT MAHÉ HOMBRE RECICLADO</h4>
-                    <section class="slider-flecha__precios">
-                        <span>$24.493 </span>
-                        <span class="slider-flecha__antiguo-precio">$34.990</span>
-                    </section>
-                </article>
-                <article class="slider-flecha__producto">
-                    <img src="/imagenes/hombreshort.jpg" alt="" class="slider-flecha__imagen-producto">
                     <h4 class="slider-flecha__titulo-producto">CAMISA LINEN SHIRT LOBO HOMBRE</h4>
                     <section class="slider-flecha__precios">
                         <span>$24.493 </span>
                         <span class="slider-flecha__antiguo-precio">$34.990</span>
                     </section>
                 </article>
+
+                <article class="slider-flecha__producto">
+                    <img src="/imagenes/hombreshort.jpg" alt="" class="slider-flecha__imagen-producto">
+                    <h4 class="slider-flecha__titulo-producto">TRAJE DE BAÑO BOARDSHORT MAHÉ HOMBRE RECICLADO</h4>
+                    <section class="slider-flecha__precios">
+                        <span>$24.493 </span>
+                        <span class="slider-flecha__antiguo-precio">$34.990</span>
+                    </section>
+                </article>
+
+                <article class="slider-flecha__producto">
+                    <img src="/imagenes/trajeazul.jpg" alt="" class="slider-flecha__imagen-producto">
+                    <h4 class="slider-flecha__titulo-producto">POLERA GOOFY MUJER RECICLADA
+                    </h4>
+                    <section class="slider-flecha__precios">
+                        <span>$19.990</span>
+                        <!-- <span class="slider-flecha__antiguo-precio">$34.990</span> -->
+                    </section>
+                </article>
+
+                <article class="slider-flecha__producto">
+                    <img src="/imagenes/trajeamarillo.jpg" alt="" class="slider-flecha__imagen-producto">
+                    <h4 class="slider-flecha__titulo-producto">TRAJE DE BAÑO BOARDSHORT MAHÉ HOMBRE RECICLADO
+                    </h4>
+                    <section class="slider-flecha__precios">
+                        <span>$24.493 </span>
+                        <span class="slider-flecha__antiguo-precio">$34.990</span>
+                    </section>
+                </article>
+
+                <article class="slider-flecha__producto">
+                    <img src="/imagenes/mochila.jpg" alt="" class="slider-flecha__imagen-producto">
+                    <h4 class="slider-flecha__titulo-producto">SHORT GOOFY MUJER RECICLADO
+                    </h4>
+                    <section class="slider-flecha__precios">
+                        <span>$13.993</span>
+                        <span class="slider-flecha__antiguo-precio">$19.990</span>
+                    </section>
+                </article>
+
+                <article class="slider-flecha__producto">
+                    <img src="/imagenes/zapatoverde.jpg" alt="" class="slider-flecha__imagen-producto">
+                    <h4 class="slider-flecha__titulo-producto">CAMISA LINEN SHIRT LOBO HOMBRE
+                    </h4>
+                    <section class="slider-flecha__precios">
+                        <span>$24.493</span>
+                        <span class="slider-flecha__antiguo-precio">$34.990</span>
+                    </section>
+                </article>
+
+
             </div>
-        </section>
+
+            <!-- Controles -->
+            <button class="slider-flecha__izquierda">
+                <img src="./imagenes/flechaizquierda.svg" alt="flechaderecha">
+            </button>
+            <button class="slider-flecha__derecha">
+                <img src="./imagenes/flechaderecha.svg" alt="flechaizquierda">
+            </button>
         </section>
 
         <!-- Seccion categorias -->
         <section class="contenedor-categorias">
             <h3 class="contenedor-categorias__title">Categorías</h3>
             <div class="contenedor-categorias__grid">
+
                 <article class="contenedor-categorias__elemento-grid">
                     <img src="/imagenes/suntent.jpg" alt="category image">
                     <span>Trajes de agua</span>
                 </article>
+
                 <article class="contenedor-categorias__elemento-grid">
                     <img src="/imagenes/local.jpg" alt="category image">
                     <span>Hombre</span>
                 </article>
+
                 <article class="contenedor-categorias__elemento-grid">
                     <img src="/imagenes/arte.jpg" alt="category image">
                     <span>Mujer</span>
                 </article>
+
                 <article class="contenedor-categorias__elemento-grid">
                     <img src="/imagenes/suntent.jpg" alt="category image">
                     <span>Niños</span>
                 </article>
+
                 <article class="contenedor-categorias__elemento-grid">
                     <img src="/imagenes/local.jpg" alt="category image">
                     <span>Accesorios</span>
                 </article>
+
                 <article class="contenedor-categorias__elemento-grid">
                     <img src="/imagenes/arte.jpg" alt="category image">
                     <span>Equipamiento</span>
                 </article>
+
+
             </div>
         </section>
-
-
     </main>
 
     <footer class="footer-primario">
@@ -194,7 +247,8 @@
                     sorteos y concursos que tenemos para ti!
                 </p>
                 <form action="#" method="post" class="tarjeta-suscripcion__form">
-                    <input type="email" placeholder="Ingresa tu correo electrónico" class="tarjeta-suscripcion__email-form">
+                    <input type="email" placeholder="Ingresa tu correo electrónico"
+                        class="tarjeta-suscripcion__email-form">
                     <label class="tarjeta-suscripcion__text-form">
                         <input required type="checkbox" class="tarjeta-suscripcion__check-email">
                         Acepto recibir promociones y novedades de Stoked y marcas representadas por Komax.
@@ -242,7 +296,7 @@
                         </ul>
                     </nav>
                 </div>
-    
+
                 <div class="direcciones">
                     <span>Nuestras Tiendas</span>
                     <div class="direcciones__tiendas">
@@ -260,7 +314,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="social">
                     <div class="social__links">
                         <span>Nuestras Redes</span>
@@ -282,7 +336,7 @@
         <p class="copyright">2022 © Komax S.A. Todos los derechos reservados | AV. del Parque 4314, Huechuraba, Santiago
             de Chile | sac@komax.cl</p>
     </footer>
-
+    <script src="src/javascript/script.js"></script>
 </body>
 
 </html>
