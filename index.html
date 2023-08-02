@@ -22,45 +22,72 @@
 
       
         <div class="contenido-primario-header">
-            <div class="instagram-clientes">
-                <span>Asesoramiento, preguntas técnicas y más en @stokedchile</span>
-                <img src="./imagenes/insta.svg" alt="instagram">
+            <div class="barra-superior">
+                <div class="barra-superior__instagram-clientes">
+                    <span>Asesoramiento, preguntas técnicas y más en @stokedchile</span>
+                    <img src="./imagenes/insta.svg" alt="instagram">
+                </div>
+                <div class="barra-superior__usuario">
+                    <a href="#" class="barra-superior__link">
+                        <img src="./imagenes/usuario.svg" alt="usuario">
+                    </a>
+                    <a href="#" class="barra-superior__link">
+                        <img src="./imagenes/camion.svg" alt="camion">
+                    </a>
+                    <a href="#" class="barra-superior__link">
+                        <img src="./imagenes/carrito.svg" alt="carrito">
+                    </a>
+                    <a href="#" class="barra-superior__link">
+                        <img src="./imagenes/tienda.svg" alt="tienda">
+                    </a>
+                </div>
             </div>
 
             <!-- Menu -->
             <div class="menu">
-                <img src="./imagenes/stoked simplificado1 1.svg" alt="logo stoked">
-
-                <div class="menu__icons">
-                    <a href="#">
-                        <img src="./imagenes/usuario.svg" alt="usuario">
-                    </a>
-                    <a href="#">
-                        <img src="./imagenes/carrito.svg" alt="carrito">
-                    </a>
-                    <a href="#">
-                        <img src="./imagenes/menu.svg" alt="menu">
-                    </a>
+                <div class="menu__navegacion">
+                    <img src="./imagenes/stoked simplificado1 1.svg" alt="logo stoked">
+    
+                    <div class="menu__icons">
+                        <a href="#">
+                            <img src="./imagenes/usuario.svg" alt="usuario">
+                        </a>
+                        <a href="#">
+                            <img src="./imagenes/carrito.svg" alt="carrito">
+                        </a>
+                        <a href="#">
+                            <img src="./imagenes/menu.svg" alt="menu">
+                        </a>
+                    </div>
+    
+                    <!-- Siempre oculto hasta desktop o hasta la interacción -->
+                    <nav class="menu__desktop">
+                       <ul class="menu__desktop-lista">
+                           <li class="menu__desktop-item">
+                                <a href="#trajesdeagua ">Trajes de agua</a></li>
+                           <li class="menu__desktop-item">
+                                <a href="#hombre">Hombre</a></li>
+                           <li class="menu__desktop-item">
+                                <a href="#mujer">Mujer</a></li>
+                           <li class="menu__desktop-item">
+                                <a href="#niños">Niños</a></li>
+                           <li class="menu__desktop-item">
+                                <a href="#accesorios">Accesorios</a></li>
+                           <li class="menu__desktop-item">
+                                <a href="#equipamiento">Equipamiento</a></li>
+                           <li class="menu__desktop-item">
+                                <a href="#sale">Sale</a></li>
+                       </ul>
+                   </nav>
+                </div>
+    
+                <!-- Search -->
+                <div class="menu__busqueda">
+                    <input type="search" placeholder="buscar" class="menu__barra-de-busqueda" />
+                    <img src="/imagenes/lupa.svg" alt="lupa" class="menu__icon-busqueda">
                 </div>
             </div>
-            <!-- Siempre oculto hasta desktop o hasta la interacción -->
-            <!-- <nav>
-               <ul>
-                   <li><a href="#trajesdeagua ">Trajes de agua</a></li>
-                   <li><a href="#hombre">Hombre</a></li>
-                   <li><a href="#mujer">Mujer</a></li>
-                   <li><a href="#niños">Niños</a></li>
-                   <li><a href="#accesorios">Accesorios</a></li>
-                   <li><a href="#equipamiento">Equipamiento</a></li>
-                   <li><a href="#sale">Sale</a></li>
-               </ul>
-           </nav> -->
 
-            <!-- Search -->
-            <div class="contenedor-de-busqueda">
-                <input type="search" placeholder="buscar" class="contenedor-de-busqueda__barra-de-busqueda" />
-                <img src="/imagenes/lupa.svg" alt="lupa" class="contenedor-de-busqueda__icon">
-            </div>
         </div>
 
         <p class="alerta-marketing">ENVÍO GRATIS POR COMPRAS SOBRE $50.000</p>
@@ -160,93 +187,95 @@
     </main>
 
     <footer class="footer-primario">
-        <div class="tarjeta-suscripcion">
-            <span class="tarjeta-suscripcion__titulo">Subcríbete</span>
-            <p class="tarjeta-suscripcion__contenido">¡Infórmate de las noticias, eventos, promociones, descuentos,
-                sorteos y concursos que tenemos para ti!
-            </p>
-            <form action="#" method="post" class="tarjeta-suscripcion__form">
-                <input type="email" placeholder="Ingresa tu correo electrónico" class="tarjeta-suscripcion__email-form">
-                <label class="tarjeta-suscripcion__text-form">
-                    <input required type="checkbox" class="tarjeta-suscripcion__check-email">
-                    Acepto recibir promociones y novedades de Stoked y marcas representadas por Komax.
-                </label>
-                <input type="submit" value="Regístrate" class="tarjeta-suscripcion__boton-form" />
-            </form>
-        </div>
-        <div class="contenido-primario-footer">
-            <div class="links">
-                <span>Te informamos</span>
-                <nav class="links__navegacion">
-                    <ul class="links__lista">
-                        <li class="links__item">
-                            <a href="#formulariodecontacto ">Formulario de contacto</a>
-                        </li>
-                        <li class="links__item">
-                            <a href="#chateaconnosotros">Chatea con nosotros</a>
-                        </li>
-                        <li class="links__item">
-                            <a href="#nosotros">Nosotros</a>
-                        </li>
-                        <li class="links__item">
-                            <a href="#términosycondicionesiños">Términos y condiciones</a>
-                        </li>
-                        <li class="links__item">
-                            <a href="#nuestrastiendas">Nuestras tiendas</a>
-                        </li>
-                    </ul>
-                    <ul class="links__lista">
-                        <li class="links__item">
-                            <a href="#costosdeenvío">Costos de envío</a>
-                        </li>
-                        <li class="links__item">
-                            <a href="#mediosdepago">Medios de pago</a>
-                        </li>
-                        <li class="links__item">
-                            <a href="#estadodemipedido">Estado de mi pedido</a>
-                        </li>
-                        <li class="links__item">
-                            <a href="#cambiosydevoluciones">Cambios y devoluciones</a>
-                        </li>
-                        <li class="links__item">
-                            <a href="#Garantías">Garantías</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="footer-primario__container">
+            <div class="tarjeta-suscripcion">
+                <span class="tarjeta-suscripcion__titulo">Subcríbete</span>
+                <p class="tarjeta-suscripcion__contenido">¡Infórmate de las noticias, eventos, promociones, descuentos,
+                    sorteos y concursos que tenemos para ti!
+                </p>
+                <form action="#" method="post" class="tarjeta-suscripcion__form">
+                    <input type="email" placeholder="Ingresa tu correo electrónico" class="tarjeta-suscripcion__email-form">
+                    <label class="tarjeta-suscripcion__text-form">
+                        <input required type="checkbox" class="tarjeta-suscripcion__check-email">
+                        Acepto recibir promociones y novedades de Stoked y marcas representadas por Komax.
+                    </label>
+                    <input type="submit" value="Regístrate" class="tarjeta-suscripcion__boton-form" />
+                </form>
             </div>
-
-            <div class="direcciones">
-                <span>Nuestras Tiendas</span>
-                <div class="direcciones__tiendas">
-                    <div class="direcciones__lista">
-                        <p>OMZ</p>
-                        <p>AV. Costanera S/N</p>
-                        <p>Matanza</p>
-                        <p>+56932687133</p>
-                    </div>
-                    <div class="direcciones__lista">
-                        <p>ALTOMAR</p>
-                        <p>AV. Comercio #2241</p>
-                        <p>Pichilemu</p>
-                        <p>+56932687132</p>
+            <div class="contenido-primario-footer">
+                <div class="links">
+                    <span>Te informamos</span>
+                    <nav class="links__navegacion">
+                        <ul class="links__lista">
+                            <li class="links__item">
+                                <a href="#formulariodecontacto ">Formulario de contacto</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="#chateaconnosotros">Chatea con nosotros</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="#nosotros">Nosotros</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="#términosycondicionesiños">Términos y condiciones</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="#nuestrastiendas">Nuestras tiendas</a>
+                            </li>
+                        </ul>
+                        <ul class="links__lista">
+                            <li class="links__item">
+                                <a href="#costosdeenvío">Costos de envío</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="#mediosdepago">Medios de pago</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="#estadodemipedido">Estado de mi pedido</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="#cambiosydevoluciones">Cambios y devoluciones</a>
+                            </li>
+                            <li class="links__item">
+                                <a href="#Garantías">Garantías</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="direcciones">
+                    <span>Nuestras Tiendas</span>
+                    <div class="direcciones__tiendas">
+                        <div class="direcciones__lista">
+                            <p>OMZ</p>
+                            <p>AV. Costanera S/N</p>
+                            <p>Matanza</p>
+                            <p>+56932687133</p>
+                        </div>
+                        <div class="direcciones__lista">
+                            <p>ALTOMAR</p>
+                            <p>AV. Comercio #2241</p>
+                            <p>Pichilemu</p>
+                            <p>+56932687132</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="social">
-                <div class="social__links">
-                    <span>Nuestras Redes</span>
-                    <nav class="social__navegacion">
-                        <a href="#">
-                            <img src="/imagenes/insta.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="/imagenes/face.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="/imagenes/twitter.svg" alt="">
-                        </a>
-                    </nav>
+    
+                <div class="social">
+                    <div class="social__links">
+                        <span>Nuestras Redes</span>
+                        <nav class="social__navegacion">
+                            <a href="#">
+                                <img src="/imagenes/insta.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="/imagenes/face.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="/imagenes/twitter.svg" alt="">
+                            </a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
