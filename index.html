@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/globals.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+    <title>Komax</title>
+</head>
+
+<body>
+    <header class="header-primario">
+
+      
+        <div class="contenido-primario-header">
+            <div class="instagram-clientes">
+                <span>Asesoramiento, preguntas técnicas y más en @stokedchile</span>
+                <img src="./imagenes/insta.svg" alt="instagram">
+            </div>
+
+            <!-- Menu -->
+            <div class="menu">
+                <img src="./imagenes/stoked simplificado1 1.svg" alt="logo stoked">
+
+                <div class="menu__icons">
+                    <a href="#">
+                        <img src="./imagenes/usuario.svg" alt="usuario">
+                    </a>
+                    <a href="#">
+                        <img src="./imagenes/carrito.svg" alt="carrito">
+                    </a>
+                    <a href="#">
+                        <img src="./imagenes/menu.svg" alt="menu">
+                    </a>
+                </div>
+            </div>
+            <!-- Siempre oculto hasta desktop o hasta la interacción -->
+            <!-- <nav>
+               <ul>
+                   <li><a href="#trajesdeagua ">Trajes de agua</a></li>
+                   <li><a href="#hombre">Hombre</a></li>
+                   <li><a href="#mujer">Mujer</a></li>
+                   <li><a href="#niños">Niños</a></li>
+                   <li><a href="#accesorios">Accesorios</a></li>
+                   <li><a href="#equipamiento">Equipamiento</a></li>
+                   <li><a href="#sale">Sale</a></li>
+               </ul>
+           </nav> -->
+
+            <!-- Search -->
+            <div class="contenedor-de-busqueda">
+                <input type="search" placeholder="buscar" class="contenedor-de-busqueda__barra-de-busqueda" />
+                <img src="/imagenes/lupa.svg" alt="lupa" class="contenedor-de-busqueda__icon">
+            </div>
+        </div>
+
+        <p class="alerta-marketing">ENVÍO GRATIS POR COMPRAS SOBRE $50.000</p>
+    </header>
+
+    <main class="main">
+
+        <!-- Seccion ofertas -->
+        <section>
+            <!-- Descuento -->
+            <picture class="hero-descuento">
+                <source media="(min-width:1512px)" srcset="./imagenes/stoked_trajes_de_ban_o-01.jpg"
+                    alt="descuento del 50%" type="image/svg+xml" />
+                <img src="./imagenes/banner principal.jpg" alt="descuento del 50%" style="width:100%" />
+            </picture>
+
+            <!-- Descuento slider  -->
+            <div class="slider-touch">
+                <div class="slider-touch__container">
+                    <img src="./imagenes/Rectangle 57.png" alt="verano hombre">
+                    <img src="./imagenes/Rectangle 58.jpg" alt="polerones">
+                    <img src="./imagenes/Rectangle 59.png" alt="poleras">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion productos -->
+        <section class="slider-flecha">
+            <h3>LO QUE LA GENTE ESTÁ LLEVANDO</h3>
+
+            <div class="slider-flecha__derecha">
+                <img src="./imagenes/flechaizquierda.svg" alt="flechaderecha">
+            </div>
+            <div class="slider-flecha__izquierda">
+                <img src="./imagenes/flechaderecha.svg" alt="flechaizquierda">
+            </div>
+            <div class="slider-flecha__container">
+                <article class="slider-flecha__producto">
+                    <img src="./imagenes/mujer.jpg" alt="" class="slider-flecha__image-producto">
+                    <h4 class="slider-flecha__titulo-producto">POLERA GOOFY MUJER RECICLADA</h4>
+                    <section class="slider-flecha__precios">
+                        <span>$19.990</span>
+                    </section>
+                </article>
+                <article class="slider-flecha__producto">
+                    <img src="/imagenes/hombrecamisa.jpg" alt="" class="slider-flecha__image-producto">
+                    <h4 class="slider-flecha__titulo-producto">TRAJE DE BAÑO BOARDSHORT MAHÉ HOMBRE RECICLADO</h4>
+                    <section class="slider-flecha__precios">
+                        <span>$24.493 </span>
+                        <span class="slider-flecha__antiguo-precio">$34.990</span>
+                    </section>
+                </article>
+                <article class="slider-flecha__producto">
+                    <img src="/imagenes/hombreshort.jpg" alt="" class="slider-flecha__imagen-producto">
+                    <h4 class="slider-flecha__titulo-producto">CAMISA LINEN SHIRT LOBO HOMBRE</h4>
+                    <section class="slider-flecha__precios">
+                        <span>$24.493 </span>
+                        <span class="slider-flecha__antiguo-precio">$34.990</span>
+                    </section>
+                </article>
+            </div>
+        </section>
+        </section>
+
+        <!-- Seccion categorias -->
+        <section class="contenedor-categorias">
+            <h3 class="contenedor-categorias__title">Categorías</h3>
+            <div class="contenedor-categorias__grid">
+                <article class="contenedor-categorias__elemento-grid">
+                    <img src="/imagenes/suntent.jpg" alt="category image">
+                    <span>Trajes de agua</span>
+                </article>
+                <article class="contenedor-categorias__elemento-grid">
+                    <img src="/imagenes/local.jpg" alt="category image">
+                    <span>Hombre</span>
+                </article>
+                <article class="contenedor-categorias__elemento-grid">
+                    <img src="/imagenes/arte.jpg" alt="category image">
+                    <span>Mujer</span>
+                </article>
+                <article class="contenedor-categorias__elemento-grid">
+                    <img src="/imagenes/suntent.jpg" alt="category image">
+                    <span>Niños</span>
+                </article>
+                <article class="contenedor-categorias__elemento-grid">
+                    <img src="/imagenes/local.jpg" alt="category image">
+                    <span>Accesorios</span>
+                </article>
+                <article class="contenedor-categorias__elemento-grid">
+                    <img src="/imagenes/arte.jpg" alt="category image">
+                    <span>Equipamiento</span>
+                </article>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer-primario">
+        <div class="tarjeta-suscripcion">
+            <span class="tarjeta-suscripcion__titulo">Subcríbete</span>
+            <p class="tarjeta-suscripcion__contenido">¡Infórmate de las noticias, eventos, promociones, descuentos,
+                sorteos y concursos que tenemos para ti!
+            </p>
+            <form action="#" method="post" class="tarjeta-suscripcion__form">
+                <input type="email" placeholder="Ingresa tu correo electrónico" class="tarjeta-suscripcion__email-form">
+                <label class="tarjeta-suscripcion__text-form">
+                    <input required type="checkbox" class="tarjeta-suscripcion__check-email">
+                    Acepto recibir promociones y novedades de Stoked y marcas representadas por Komax.
+                </label>
+                <input type="submit" value="Regístrate" class="tarjeta-suscripcion__boton-form" />
+            </form>
+        </div>
+        <div class="contenido-primario-footer">
+            <div class="links">
+                <span>Te informamos</span>
+                <nav class="links__navegacion">
+                    <ul class="links__lista">
+                        <li class="links__item">
+                            <a href="#formulariodecontacto ">Formulario de contacto</a>
+                        </li>
+                        <li class="links__item">
+                            <a href="#chateaconnosotros">Chatea con nosotros</a>
+                        </li>
+                        <li class="links__item">
+                            <a href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="links__item">
+                            <a href="#términosycondicionesiños">Términos y condiciones</a>
+                        </li>
+                        <li class="links__item">
+                            <a href="#nuestrastiendas">Nuestras tiendas</a>
+                        </li>
+                    </ul>
+                    <ul class="links__lista">
+                        <li class="links__item">
+                            <a href="#costosdeenvío">Costos de envío</a>
+                        </li>
+                        <li class="links__item">
+                            <a href="#mediosdepago">Medios de pago</a>
+                        </li>
+                        <li class="links__item">
+                            <a href="#estadodemipedido">Estado de mi pedido</a>
+                        </li>
+                        <li class="links__item">
+                            <a href="#cambiosydevoluciones">Cambios y devoluciones</a>
+                        </li>
+                        <li class="links__item">
+                            <a href="#Garantías">Garantías</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="direcciones">
+                <span>Nuestras Tiendas</span>
+                <div class="direcciones__tiendas">
+                    <div class="direcciones__lista">
+                        <p>OMZ</p>
+                        <p>AV. Costanera S/N</p>
+                        <p>Matanza</p>
+                        <p>+56932687133</p>
+                    </div>
+                    <div class="direcciones__lista">
+                        <p>ALTOMAR</p>
+                        <p>AV. Comercio #2241</p>
+                        <p>Pichilemu</p>
+                        <p>+56932687132</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social">
+                <div class="social__links">
+                    <span>Nuestras Redes</span>
+                    <nav class="social__navegacion">
+                        <a href="#">
+                            <img src="/imagenes/insta.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/imagenes/face.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="/imagenes/twitter.svg" alt="">
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">2022 © Komax S.A. Todos los derechos reservados | AV. del Parque 4314, Huechuraba, Santiago
+            de Chile | sac@komax.cl</p>
+    </footer>
+
+</body>
+
+</html>
